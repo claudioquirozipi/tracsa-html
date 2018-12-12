@@ -1,0 +1,11 @@
+.cqGrid12x12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+}
+
+.cqGrid12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-flow: row dense;
+}

@@ -1,0 +1,411 @@
+.post {
+	// border: 1px solid;
+	display: grid;
+	grid-auto-flow: row dense;
+	grid-template-columns: repeat(12, 1fr);
+	margin-bottom: 100px;
+	overflow: hidden;
+	padding:0px 0 30px;
+	@include media(md) {
+		margin-bottom: 150px;
+	}
+	p {display: none}
+	.HeaderBgUreply {
+		background-image: url(image/header/banner-ureply.png);
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.HeaderImgUreply {
+		background-image: url(image/header/logoUreply.png);
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.HeaderBgUniply {
+		background-image: url(image/header/banner-uniply.png);
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.HeaderImgUniply {
+		background-image: url(image/header/logoUniply.png);
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.HeaderBgUnipol {
+		background-image: url(image/header/banner-unipol.png);
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.HeaderImgUnipol {
+		background-image: url(image/header/logoUnipol.png);
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.HeaderBgSerply {
+		background-image: url(image/header/banner-serply.png);
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.HeaderImgSerply {
+		background-image: url(image/header/logoSerply.png);
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.HeaderBgVelta {
+		background-image: url(image/header/banner-velta.png);
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.HeaderImgVelta {
+		background-image: url(image/header/logoVelta.png);
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.HeaderBgDaver {
+		background-image: url(image/header/banner-daver.png);
+		background-size: cover;
+		background-position: bottom center;
+		background-repeat: no-repeat;
+	}
+	.HeaderImgDaver {
+		background-image: url(image/header/logoDaver.png);
+		background-size: auto 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}	
+	.post__Header {
+		height: 80vh;
+		margin-bottom: 150px;
+		@include media(md) {
+			height: 100vh;
+		}
+		.post__HeaderIcon {
+			grid-area: 2/2/span 1/span 1;
+			@include media(md) {
+				transform: translate(-38px, -20px);
+			}
+			i {
+				text-decoration: none;
+				background: #fff;
+				color: var(--blueD);
+				border-radius: 50%;
+				font-size: 50px;
+				transition: .1s transform;
+				&:hover {
+					transform: scale(1.1);
+				}
+
+			}
+		}
+		.post__HeaderImg {
+			grid-area: 11/1/13/13;
+			height: 100%;
+			
+
+		}
+	}
+	.post__title {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		grid-column: 2/12;
+		margin: 100px 0;
+		color: #585858;
+		position: relative;
+		font-weight: 900;
+		font-size: 35px;
+		@include media(sm) {
+			font-size: 55px;
+		}
+		@include media(md) {
+			margin-top: 100px;
+			font-size: 2.4rem;
+	  	}
+	}
+	.post__imgTitle {
+		margin: 30px 0;
+		// transform: translateY(40px);
+		// @include media(md) {
+		// 	transform: translateY(0px);
+		// }
+	}
+	.post__h2 {
+		font-size: 20px;
+		color: var(--greyD2);
+		@include media(sm) {
+			font-size: 30px;
+			text-align: center;
+		}
+		@include media(md) {
+			font-size: 25px;
+			text-align: left;
+		}
+
+	}
+	h2 {
+		margin: 0 0 17.5px;
+	}
+	.post__p {
+		// margin: 50px 0;
+		font-weight: 700;
+		line-height: 20px;
+		color: var(--grey);
+		text-align: left;
+		font-size: 1rem;
+		display: block;
+		@include media(sm) {
+			font-size: 24px;
+			line-height: 40px;
+			text-align: center;
+		}
+		@include media(md) {
+			margin: 0;
+			text-align: left;
+			font-size: 20px;
+			line-height: 40px;
+		}
+		@include media(lg) {
+			
+			font-size: 26px;
+			line-height: 45px;
+			
+			
+		}
+		span {
+			color: var(--blue);
+			font-size: 1rem;
+
+		}
+	}
+	ul {
+		margin: 0;
+		padding-left: 26px;
+		@include media(md) {
+			padding-left: 40px;
+		}
+		li {
+			list-style: none;
+			// color: #7F7F7F;
+			color: var(--greyD);
+			margin: 15px 0;
+			font-size: .8em;
+			line-height: 2em;
+			font-weight: 700;
+			position: relative;
+			@include media(sm) {
+				font-size: 23px;
+			}
+			@include media(md) {
+				font-size: 1.1em;
+			}
+			i {
+				position: absolute;
+				right: 104%;
+				top: 50%;
+				transform: translateY(-50%);
+				font-weight: 900;
+				font-size: 1.4em;
+
+			}
+		}
+	}
+	.post__Izquierda {
+		grid-column:2/12;
+		transition: all 1s;
+		@include media(sm) {
+			display: flex;
+			justify-content: center;
+		}
+		@include media(md) {		
+			transform: translateX(-100vw);
+			grid-column: 2/7;
+			justify-content: flex-start;
+		}
+		// border:1px solid green;	
+	}
+	.post__Derecha {
+		grid-column:2/12;
+		transition: all 1s;
+		@include media(sm) {
+			display: flex;
+			justify-content: center;
+		}
+		@include media(md) {
+			transform: translateX(100vw);
+			grid-column: 7/12;
+			justify-content: flex-end;
+		}
+		
+	}
+	.post__Centro {
+		grid-column: 2/12;
+		transition: all 1s;
+		@include media(md) {
+			transform: translateX(-100vw);
+		}
+		img {
+			width: 100%;
+		}
+	}
+	.post__CentroHeader {
+		grid-column: 1/13;
+	}
+	.post__img {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		@include media(sm) {
+			width: 70%;			
+		}
+		@include media(md) {
+			width: 100%;
+			
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			@include media(md) {
+				height: auto;
+			}
+		}
+	}
+	.post__text {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		@include media(sm) {
+			width: 70%;
+			align-items: center;
+		}
+		@include media(md) {
+			width: 80%;
+			align-items: flex-start;
+			justify-content: center;
+		}
+		img {
+			height: auto;
+			width: 60%;
+		}
+	}
+	.botones {
+		display: flex;
+		margin-top: 50px;
+		justify-content: center;
+		width: 100%;
+		.boton1, .boton2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 150px;
+			height: 50px;
+			border-radius: 40px;
+			text-decoration: none;
+			font-weight: 700;
+			transition: all .2s linear;
+			box-shadow: 3px 3px 5px 3px rgba(110,110,110,.3);
+			@include media(md) {
+				width: 200px;
+			}
+			&:hover {
+				transform: scale(1.05);
+			}
+		}
+		.boton1 {
+			color: var(--white);
+		}
+		.boton2 {
+			background: transparent;
+			margin-left: 50px;
+			width: auto;
+			display: none;
+			// border: 1px solid black;
+		}
+		
+	}
+}
+
+
+
+
+.post__fondo {
+	background-image: url(image/pots__fondo.png);
+    background-size: auto 94%;
+	background-repeat: no-repeat;
+    background-position: bottom left;
+	margin-bottom: 0;
+	padding-bottom: 100px;
+    margin-top: 100px;
+	@include media(md) {		
+		margin-top: 0;
+		padding-bottom: 0;
+		background-size: 100% 100%;
+		background-position: left center;
+	}
+}
+.CompaniaLider__texto {
+	
+	h3 {
+		width: 100%;
+		color: var(--white);
+		font-size: 25px;
+		font-weight: 700;
+		line-height: 1.4;
+		transform: translateY(40px);
+		@include media(sm) {
+			text-align: center;
+			font-size: 35px;
+		}
+		@include media(md) {		
+			font-size:30px;
+			transform: translateY(0px);
+			margin-top: 150px;
+		}
+		@include media(lg) {
+			font-size: 33px;
+		}
+	}
+	.post__p {
+		color: var(--white);
+		display: block;
+		font-size: 13px;
+		font-weight: 600;
+		line-height: 2;
+		margin: 50px 0;
+		@include media(sm) {
+			margin-top: 50px;
+			text-align: center;
+			font-size: 18px;
+			line-height: 55px;
+		}
+		@include media(md) {		
+			line-height: 3;
+			font-size: 15px;
+			margin-bottom: 150px;
+		}
+		@include media(lg) {
+			font-size: 18px;
+		}
+	}
+}
+.testimonios__flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	@include media(md) {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

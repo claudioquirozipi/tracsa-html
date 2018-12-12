@@ -1,0 +1,124 @@
+.cqCard1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+    padding: 50px 30px;
+    box-shadow: 3px 3px 20px 3px rgba(119,119,119,.3);
+    border-radius: 10px;
+    transition: transform .3s;
+    &:hover {
+        transform: scale(1.04);
+    }
+    @include media(sm) {
+        width: 70%;
+        padding: 80px 50px;        
+    }
+    @include media(md) {		
+        width: 24%;
+        padding: 40px 25px;
+    }		
+    img {
+        width: auto;
+        height: 100px;
+        @include media(sm) {
+            height: 150px;
+        }
+        @include media(md) {
+            height: 100px;
+        }
+    }
+    .card__p {
+        display: block;
+        margin: 40px 0 0;
+        font-size: 18px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 35px;
+        color: var(--greyD);
+        @include media(sm) {
+            margin-top: 60px;
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @include media(md) {
+            font-size: 15px;
+            margin-top: 40px;
+        }
+        @include media(lg) {
+            font-size: 17px;
+        }
+
+    }
+    span {
+        color: var(--greyD2);
+        font-size: 15px;
+        @include media(sm) {
+            font-size: 28px;
+        }
+        @include media(md) {
+            font-size: 15px;
+        }
+    }
+    .span2 {
+        font-weight: 900;
+        font-size: 16px;
+        @include media(sm) {
+            font-size: 29px;
+        }
+        @include media(md) {	
+            font-size: 16px;	
+            transform: translateY(-10px);
+            display: block;
+        }
+        
+    }
+}
+
+.cqCard3 {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    @include media(sm) {
+        width: 65%;
+    }
+    @include media(md) {
+        width: 27%;
+    }
+    img {
+        width: 100%;
+        @include media(md) {
+            width: 100%;
+        }
+    }
+    h2 {
+        text-align: center;
+        font-size: 22px;
+        @include media(sm) {
+            font-size: 40px;
+        }
+        @include media(md) {
+            font-size: 25px;
+        }
+        @include media(lg) {
+            font-size: 28px;
+        }
+
+    }
+    p {
+        text-align: center;
+        @include media(sm) {
+            font-size: 23px;
+        }
+        @include media(md) {
+            font-size: 17px;
+        }
+        @include media(lg) {
+            font-size: 19px;
+        }
+    }
+}

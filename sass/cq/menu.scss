@@ -1,0 +1,101 @@
+.cqMenu1 {
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 40px;
+        height: 40px;
+        margin-top: 15px;
+        cursor: pointer;
+        @include media(sm){
+            width: 50px;
+            height: 50px;
+        }
+        @include media(md){
+            width: 40px;
+            height: 40px;
+        }
+    }
+    .menu {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        position: relative;
+        .menuPoints {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+            width: 30px;
+            height: 30px;
+            cursor:pointer;
+            transition: transform .3s;
+            &:hover {
+                transform: scale(1.2);
+            }
+            .points {
+                background: var(--white);
+                border-radius: 50%;
+                width: 7px;
+                height: 7px;
+            }
+            .bgGrey {
+                background: var(--grey1);
+            }
+            @include media(md) {
+                display: none;
+            }
+        }
+        .menuUl {
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--white);
+            padding: 15px 30px;
+            border-radius: 30px;
+            position: absolute;
+            top: 50%;
+            box-shadow: $shadow;
+            transition: transform .3s;
+            transform: scaleY(0);
+            transform-origin: center 0;
+
+            li {
+                margin: 15px 0;
+                cursor: pointer;
+                transition: transform .3s;
+                color: var(--orange);
+                font-weight: 700;
+                width: 120px;
+                text-align: center;
+            }
+            @include media(md) {
+                flex-direction: row;
+                background: transparent;
+                border-radius: 0;
+                box-shadow: none;
+                transform: scaleY(1);
+                position: static;
+                padding: 0;
+                margin: 0;
+                height: 100%;
+                li {
+                    width: auto;
+                    margin: 0 0 0 30px;
+                    color: var(--white);
+                    font-size: 20px;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+        }
+        .menuUl--visible {
+            transform: scaleY(1);
+        }
+        
+    }
+}

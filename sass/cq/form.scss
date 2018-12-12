@@ -1,0 +1,112 @@
+.cqForm1 {	
+	display: flex;
+	width: 300px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	border-radius:50px;
+	padding: 0px 25px;
+	background: var(--white);
+	z-index: 5;
+	@include media(md) {
+		width: 	400px;
+	}
+
+	input {
+		height: 100%;
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+	input:nth-child(1) {
+		width: 	100%;
+		padding: 0px 0px;
+		color:var(--black);
+		font-size: 	20px;
+		font-weight: 700;
+		&::placeholder {
+			color: #ccc;
+		}
+		@include media(md) {
+			width: 	400px;
+		}
+	}
+	input:nth-child(2) {
+		height: 40px;
+		width: 40px;
+		background-image: url("image/form__avion.svg");
+		background-repeat: no-repeat;
+		transition: transfomr .3s;
+		cursor: pointer;
+		&:hover {
+			
+			transform: scale(1.1);
+			// background: red;
+		}
+	}
+}
+.cqForm2 {
+    background: var(--white);
+    box-shadow: $shadow;
+    display: flex;
+    flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 25px;
+	padding: 25px 0;
+	@include media(md) {
+	
+	}
+	h3 {
+		font-size: 20px;
+		color: var(--black);
+		margin: 0;
+		@include media(sm) {
+			
+			font-size: 40px;
+		}
+		@include media(md) {
+			font-size: 40px;
+		}
+		@include media(lg) {
+			font-size: 45px;
+		}
+	}
+    input {
+        outline: none;
+        list-style: none;
+    }
+    input[type="text"], input[type="mail"] {
+        border: none;
+        color: var(--black);
+        background: var(--grey2);
+        border-radius: 40px;
+		padding: 10px 15px;
+		width: 70%;
+        &::placeholder{
+            color: var(--grey1);
+		}
+		font-size: 15px;
+		margin: 0;
+		@include media(sm) {
+			
+			font-size: 30px;
+		}
+		@include media(md) {
+			font-size: 20px;
+			padding: 15px 15px;
+			
+		}
+		@include media(lg) {
+			padding: 15px 20px;
+			font-size: 22px;
+			
+		}
+	}
+	input[type="button"] {
+		// margin-top: 20px;
+		@include media(md) {
+			// margin-top: 50px;
+		}
+	}
+}

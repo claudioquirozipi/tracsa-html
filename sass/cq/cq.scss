@@ -1,0 +1,65 @@
+.cqGrid12x12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+}
+
+.cqGrid12 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-auto-flow: row dense;
+}
+.cqLeft {
+	grid-column: 2/12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all linear 1s;
+	@include media(md) {
+		transform: translateX(-100vw);
+		grid-column: 2/7;
+		justify-content: flex-start;
+	}
+}
+.cqRight {
+	grid-column: 2/12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all linear 1s;
+	@include media(md) {
+		transform: translateX(100vw);
+		grid-column: 7/12;
+		justify-content: flex-end;
+	}	
+}
+.cqCenter {
+	grid-column: 2/12;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all linear 1s;
+	@include media(md) {
+		transform: translateX(-100vw);
+	}
+}
+.cqFlexCenter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cqFlexCenterColumn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.cqflexBetween {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	@include media(md) {
+		flex-direction: row;
+	}
+}

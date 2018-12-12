@@ -1,0 +1,40 @@
+// variables:
+$breakpoint-xs: 360px;
+$breakpoint-sm: 591px;
+$breakpoint-md: 799px;
+$breakpoint-lg: 1400px;
+
+@mixin media($media) {
+  @if $media == xs {
+    @media (min-width: $breakpoint-xs) { @content; }
+  }
+  @else if $media == sm {
+    @media (min-width: $breakpoint-sm) { @content; }
+  }
+  @else if $media == md {
+    @media (min-width: $breakpoint-md) and (orientation: landscape) { @content; }
+  }
+  @else if $media == lg {
+    @media (min-width: $breakpoint-lg) and (orientation: landscape) { @content; }
+  }
+}
+.hola {
+    @include media(xs) {
+        background: yellow;
+    }
+}
+.hola2 {
+    @include media(sm) {
+        background: blue;
+    }
+}
+.hola3 {
+    @include media(md) {
+        background: red;
+    }
+}
+.hola4 {
+    @include media(lg) {
+        background: pink;
+    }
+}

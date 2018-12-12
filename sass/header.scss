@@ -1,0 +1,98 @@
+.header {
+	height: 90vh;
+	background-image: url(image/header/header__fondo.png);
+	background-size: cover;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	margin-bottom: 60px;
+	
+	.header__img {
+		background-image: url(image/header/header__logo.png);
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: bottom center;
+		height: 100%;
+		grid-area: 5/2/9/12;
+		@include media(md) {
+			background-position: bottom left;
+			background-size: auto 90%;
+			grid-area: 1/2/span 1/ span 7;
+			display: block;
+			transform: translateX(-40px);
+		}
+		// @include media(md) {
+		// 	height: 100px;
+		// }
+	}
+	.header__idioma {
+		grid-area: 1/7/span 1/ span 5;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		@include media(md) {
+			transform: translateX(40px);
+		}
+		.header--br	{
+			background-image: url(image/header/header__BRA.jpg);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: top right;
+		    width: 60px;
+    		height: 40px;
+			border-radius: 3px;
+			transform: scale(.7);
+		}
+		.header--ar	{
+			background-image: url(image/header/header__ARG.png);
+			background-size: 100% 100%;
+			background-repeat: no-repeat;
+			background-position: top right;
+		    width: 60px;
+    		height: 40px;
+			border-radius: 3px;
+			transform: scale(.7);
+		}
+	}
+	.header__titulo {
+		grid-area: 6/2/span 2/12;
+		text-align: center;
+		color: var(--white);
+		font-size: 20px;
+		filter: drop-shadow(3px 3px 3px rgba(110,110,110,0.9)); 
+		display: none;
+		@include media(md) {
+			grid-area: 4/2/6/12;
+			font-size: 45px;
+			display: inline;
+			margin: 0;
+			transform: translateY(-20px);
+		}
+		span {
+			font-size: 34px;
+			color: var(--white);
+			@include media(md) {
+				font-size: 76px;
+				display: block;
+	    		transform: translateY(45px);
+			}
+		}
+	}
+	.header__clientes {
+		grid-area: 10/1/span 3 /13;
+		background-image: url(image/header/header__clientes.png);
+		background-size: auto 50%;
+		background-position: bottom left;
+
+		background-repeat: repeat-x;
+		display: none;
+		@include media(md) {
+			display: block;
+			background-repeat: no-repeat;
+			background-position: bottom ;
+			transform: translateY(20%);
+			background-size: 100% auto;
+
+		}
+
+	}
+}

@@ -1,0 +1,46 @@
+.container__grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(12, 1fr);
+}
+.container__grid2 {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+}
+
+
+.green1 {
+	background: var(--green);
+	border-color: var(--green);
+}
+.green2 {
+	color: var(--green);
+}
+.blue1 {
+	background: var(--blue);
+	border-color: var(--blue);
+}
+.blue2 {
+	color: var(--blue);
+}
+.blueD1 {
+	background: var(--blueD);
+	border-color: var(--blueD);
+}
+.blueD2 {
+	color: var(--blueD);
+}
+.yellow1 {
+	background: var(--yellow);
+	border-color: var(--yellow);
+}
+.yellow2 {
+	color: var(--yellow);
+}
+.brown1 {
+	background: var(--brown);
+	border-color: var(--brown);
+}
+.brown2 {
+	color: var(--brown);
+}

@@ -1,0 +1,101 @@
+.headerTitle {
+	font-size: 33px;
+	color: var(--white);
+	margin: 0;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 40px;
+	@include media(sm) {
+		font-size: 65px;
+		margin-bottom: 80px;
+	}
+	@include media(md) {
+		margin-bottom: 0;
+		font-size: 35px;
+	}
+	@include media(lg) {
+		font-size: 40px;
+	}
+}
+.headerText {
+	color: var(--white);
+	margin: 30px 0;
+	text-align: center;
+	@include media(sm) {
+		font-size: 30px;
+	}
+	@include media(md) {
+		font-size: 17px;
+		line-height: 40px;
+	}
+	@include media(lg) {
+		font-size: 19px;
+		line-height: 45px;
+		margin: 50px 0;
+	}
+}
+.title1 {
+	font-size: 35px;
+	color: var(--black);
+	margin-bottom: 100px;
+	@include media(sm) {
+		font-size: 50px;
+	}
+	@include media(md) {
+		font-size: 40px;
+	}
+	@include media(lg) {
+		font-size: 50px;
+	}
+}
+.title2 {
+	font-size: 25px;
+	color: var(--black);
+	margin-top: 50px;
+	margin-bottom: 40px;
+	@include media(sm) {
+		font-size: 40px;
+	}
+	@include media(md) {
+		font-size: 30px;
+		margin-top: 16px;
+		margin-bottom: 50px;
+	}
+	@include media(lg) {
+		font-size: 35px;
+	}
+}
+.text1 {
+	font-size: 15px;
+	color: var(--black);
+	line-height: 40px;
+	@include media(sm) {
+		font-size: 28px;
+		line-height: 60px;
+	}
+	@include media(md) {
+		line-height: 65px;
+		font-size: 20px;
+	}
+	@include media(lg) {
+		line-height: 65px;
+		font-size: 25px;
+	}
+}
+.text2 {
+	font-size: 20px;
+	color: var(--black);
+	@include media(sm) {
+		font-size: 30px;
+	}
+	@include media(md) {
+		line-height: 40px;
+		font-size: 25px;
+	}
+}
+.titleCard {
+	font-size: 20px;
+	color: var(--black);
+	margin: 20px 0 30px;
+}
+

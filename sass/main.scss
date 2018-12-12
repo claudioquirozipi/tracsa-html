@@ -1,0 +1,23 @@
+/*
+Theme Name: Tracsa
+Author: Ing Claudio Quiroz
+Author URI: http://www.hostinger.com/tutorials
+Description: Tema personalizado para tracsa
+Version: 1.0
+License: GNU General Public License v3 or later
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+
+// *************** Cq Sass ************
+@import 'cq/normalizer.scss';
+@import 'cq/mediaQuery.scss';
+@import 'cq/grid.scss';
+@import 'cq/global.scss';
+@import 'cq/card.scss';
+
+// *************** Particulares ************
+@import 'global.scss';
+@import "header";
+@import "post";
+@import "footer";
